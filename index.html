@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <meta charset="utf-8">
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 12px sans-serif;
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <script src="http://d3js.org/d3.v3.min.js"></script>
+
+       <script type="text/javascript"charset="utf-8">
+           d3.text("data.csv", function(data) {
+               var parsedCSV = d3.csv.parseRows(data);
+
+               var container = d3.select("body")
+                   .append("table")
+
+                   .selectAll("tr")
+                       .data(parsedCSV).enter()
+                       .append("tr")
+
+                   .selectAll("td")
+                       .data(function(d) { return d; }).enter()
+                       .append("td")
+                       .text(function(d) { return d; });
+           });
+       </script>
+
+
+hello world
+
+<h2> Type of problem </h2>
+
+<p class="lead">Neural networks are a universal equation solver, which means they can in theory
+  solve any problem</p>
+
+<h2> Online neural network model chooser </h2>
+
+<h3> Upload your csv file for computations</h3>
+
+<button class="btn btn-default">Calculate </button>
+<form action="" method="post" enctype="multipart/form-data">
+<input type="file" name="fileToUpload" id="fileToUpload">
+<input type="submit" value="Upload CSV file" name="submit">
+</form>
+
+
+
+<h3> X value </h3>
+
+<p> Your X value is what you are trying to make a prediction on. If you have a small dataset you can paste it in, or you can upload an csv file and define the rows</p>
+
+<h3> Y value </h3>
+
+<p> Your Y value is what you are trying to classify, so lets say you want to know which categories of customers you should focus on </p>
+
+<h3> Machine learning model </h3>
+
+<p> Here is your machine learning model, based on your input we give you a few suggestions on what you should focus on</p>
+
+<h3> Input layer </h3>
+
+<h3> Add new layer </h3>
+
+<h3> Output layer </h3>
+
+<h3> Prediction </h3>
+
+</body>
+</html>

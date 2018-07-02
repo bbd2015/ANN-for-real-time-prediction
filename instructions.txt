@@ -1,0 +1,13 @@
+# inside the directory for each user
+cat *_1 > Easy
+cat *_2 > Difficult
+# for the set users
+cat *_0 > Easy
+cat *_1 > Difficult
+# for all back_N users
+# adding the labels for easy and Difficult
+awk '{printf("%s,0\n",$0)}' Easy > EasyL
+awk '{printf("%s,1\n",$0)}' Difficult > DifficultL
+# making into one file
+cat EasyL DifficultL > CognitiveLoad
+# delete unused files if you want

@@ -1,0 +1,3 @@
+true class labels in raw_command.csv for n-back are not correct
+
+use true class labels in performance log instead

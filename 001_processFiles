@@ -1,0 +1,139 @@
+#!/bin/ksh
+
+# MAKE SURE INPUT FILES DO NOT HAVE LABELS AT THE FIRST LINE
+
+
+
+#
+# Params:  CMDS FNIRS output_directory
+#
+function processFiles {
+	if (( $# != 3 )); then 
+		print "[ERROR] Expected 3 arguments, got $#" >&2
+		exit
+	fi
+
+	mkdir -p $3	# make parent dir too, if exists then no error.
+
+	nawk -v cmds="$1" -v fnirs="$2" -vODIR=$3 '
+
+	k=0;
+	function getNextEntry() {
+		return A[k++]
+	}
+
+	function RESET() {
+		k=0;
+	}
+
+	function constructFileName(   _a, _b) {
+		return sprintf("%s/OUT_%s_%s", ODIR, _a, _b);
+	}
+
+	BEGIN {
+		i=0;
+		START="";
+		while (( getline line < cmds ) > 0 ) {
+			if( index(line, "timeReceived,") != 0 )
+				continue;	# skip header
+
+			if( index(line, ",TRAINING_START,") != 0 ) {
+				split(line,aa, ",");
+				START=aa[1];
+			}
+			else if( index(line, ",TRAINING_END,") != 0 ) {
+				split(line,aa, ",");
+				A[i++] = sprintf("%s,%s,%s", START, aa[1], aa[6]);
+			}
+		}
+		RESET(); # so we can call getNextEntry() from the begining
+
+
+		close(cmds);  # need to close it so we can re-open it and read from it.
+		while (( getline line < cmds ) > 0 ) {
+			if( index(line, ",BASELINE_START,") != 0 ) {
+				split(line,aa, ",");
+				START=aa[1];
+			}
+			else if( index(line, ",BASELINE_END,") != 0 ) {
+				split(line,aa, ",");
+				#BASELINE_LINE = sprintf("%s,%s,%s", START, aa[1], aa[6]); 
+
+				SB = START;
+				SE = aa[1];
+				FILE_OUT=constructFileName("_", "BASELINE");
+#print FILE_OUT > "/dev/stderr"
+
+				while (( getline line < fnirs) > 0 ) {
+					split(line,ELEMENTS, ",");
+					if( SB <= ELEMENTS[1] && SE >= ELEMENTS[1] ) {
+						printf("%s\n", line) >> FILE_OUT; 
+					}
+					else if( SB > ELEMENTS[1] ) {
+						continue;
+					}
+					else if( SE < ELEMENTS[1] ) {
+
+#printf("BREAK %s < %s\n", SE, ELEMENTS[1])  > "/dev/stderr"
+						break;
+					}
+				}
+#print FILE_OUT > "/dev/stderr"
+				close(fnirs);
+
+
+				break;
+			}
+		}
+	} 
+
+
+	{ 
+		ENT=getNextEntry();
+		split(ENT, ar, ",");
+		SS=ar[1]
+		EE=ar[2]
+		LL=ar[3]
+		CCC=0;
+		FILE_OUT=constructFileName(CCC, LL);
+		while (( getline line ) > 0 ) {
+			split(line,ELEMENTS, ",");
+			if( SS <= ELEMENTS[1] && EE >= ELEMENTS[1] ) {
+				printf("%s\n", line) >> FILE_OUT; 
+			}
+			else if( SS > ELEMENTS[1] ) {
+				continue;
+			}
+			else if( EE < ELEMENTS[1] ) {
+				ENT=getNextEntry();
+				split(ENT, ar, ",");
+				SS=ar[1]
+				EE=ar[2]
+				LL=ar[3]
+				CCC++;
+				FILE_OUT=constructFileName(CCC, LL);
+			}
+		}
+	} 
+
+	END { 
+		printf("DONE: %s\n", ODIR);
+	} ' $2
+}
+
+D="./DATA/"
+
+# /bin/rm -fr OUT/*
+
+
+processFiles "$D/pilots2/p003-p1/p003-p1-n/2017-05-05-11-35-28-904/raw_command.csv" "$D/pilots2/p003-p1/p003-p1-n/2017-05-05-11-35-28-904/raw_fnirs.csv" "OUT/p003-p1-n"
+processFiles "$D/pilots2/p003-p1/p003-p1-s/2017-05-05-12-12-58-378/raw_command.csv" "$D/pilots2/p003-p1/p003-p1-s/2017-05-05-12-12-58-378/raw_fnirs.csv" "OUT/p003-p1-s"
+
+processFiles "$D/pilots2/p004-p1/p004-p1-n/2017-05-08-11-56-13-570/raw_command.csv" "$D/pilots2/p004-p1/p004-p1-n/2017-05-08-11-56-13-570/raw_fnirs.csv" "OUT/p004-p1-n"
+processFiles "$D/pilots2/p004-p1/p004-p1-s/2017-05-08-11-20-58-407/raw_command.csv" "$D/pilots2/p004-p1/p004-p1-s/2017-05-08-11-20-58-407/raw_fnirs.csv" "OUT/p004-p1-s"
+
+processFiles "$D/pilots2/p006-p1/p006-p1-n/2017-05-12-12-57-38-607/raw_command.csv" "$D/pilots2/p006-p1/p006-p1-n/2017-05-12-12-57-38-607/raw_fnirs.csv" "OUT/p006-p1-n"
+processFiles "$D/pilots2/p006-p1/p006-p1-s/2017-05-12-12-22-28-050/raw_command.csv" "$D/pilots2/p006-p1/p006-p1-s/2017-05-12-12-22-28-050/raw_fnirs.csv" "OUT/p006-p1-s"
+
+processFiles "$D/pilots2/p008-p1/p008-p1-n/2017-05-19-14-28-56-121/raw_command.csv" "$D/pilots2/p008-p1/p008-p1-n/2017-05-19-14-28-56-121/raw_fnirs.csv" "OUT/p008-p1-n"
+processFiles "$D/pilots2/p008-p1/p008-p1-s/2017-05-19-15-04-45-040/raw_command.csv" "$D/pilots2/p008-p1/p008-p1-s/2017-05-19-15-04-45-040/raw_fnirs.csv" "OUT/p008-p1-s"

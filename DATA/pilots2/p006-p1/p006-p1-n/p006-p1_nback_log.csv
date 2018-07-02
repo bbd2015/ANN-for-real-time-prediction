@@ -1,0 +1,286 @@
+1494608280476,{"LABEL_STATE":"prepare"}
+1494608280477,{"PARTICIPANT_ID":"p006-p1"}
+1494608280477,{"LEVELS":"1,2"}
+1494608280477,{"BASELINE_DURATION_IN_SEC":180}
+1494608280477,{"BREAK_DURATION_IN_SEC":30}
+1494608280477,{"NUMBER_OF_TRIALS_PER_LEVEL":10}
+1494608280477,{"TOTAL_NUMBER_OF_TRIALS":20}
+1494608280477,{"TRIAL_DURATION_IN_SEC":60}
+1494608280477,{"STIMULI_DURATION_IN_MILLISEC":500}
+1494608280477,{"PAUSE_BETWEEN_STIMULUS_IN_MILLISEC":2500}
+1494608280477,{"NUMBER_OF_STIMULI_PER_TRIAL":20}
+1494608280479,{"LABEL_STATE":"ready"}
+1494608280479,{"LABEL_STATE":"start task"}
+1494608280480,{"post request data":"{\"version\":1,\"time\":1494608280480,\"type\":\"TASK_START\",\"id\":10000,\"label\":10000}"}
+1494608280496,{"post request response":"{message:null}\n"}
+1494608292016,{"LABEL_STATE":"clicked: start button"}
+1494608292017,{"LABEL_STATE":"start baseline"}
+1494608292017,{"post request data":"{\"version\":1,\"time\":1494608292017,\"type\":\"BASELINE_START\",\"id\":20000,\"label\":20000}"}
+1494608292060,{"post request response":"{message:null}\n"}
+1494608472018,{"LABEL_STATE":"end baseline"}
+1494608472019,{"post request data":"{\"version\":1,\"time\":1494608472019,\"type\":\"BASELINE_END\",\"id\":20000,\"label\":20000}"}
+1494608472020,{"LABEL_STATE":"start break"}
+1494608472021,{"post request data":"{\"version\":1,\"time\":1494608472021,\"type\":\"BREAK_START\",\"id\":1000,\"label\":1000}"}
+1494608472066,{"post request response":"{message:null}\n"}
+1494608472107,{"post request response":"{message:null}\n"}
+1494608502022,{"LABEL_STATE":"end break"}
+1494608502022,{"post request data":"{\"version\":1,\"time\":1494608502022,\"type\":\"BREAK_END\",\"id\":1000,\"label\":1000}"}
+1494608502024,{"LABEL_STATE":"1-back (Trial 1/20)"}
+1494608502024,{"post request data":"{\"version\":1,\"time\":1494608502024,\"type\":\"TRAINING_START\",\"id\":0,\"label\":1}"}
+1494608502065,{"post request response":"{message:null}\n"}
+1494608502106,{"post request response":"{message:null}\n"}
+1494608562040,{"LABEL_STATE":"end trial"}
+1494608562041,{"post request data":"{\"version\":1,\"time\":1494608562041,\"type\":\"TRAINING_END\",\"id\":0,\"label\":1}"}
+1494608562041,{"LABEL_TRIAL":{"id":0,"n":1,"isLast":false,"left":0,"stimuli":[2,2,1,1,1,1,2,4,1,1,1,1,2,1,4,1,3,1,1,2],"answers":["B","Y","N","Y","Y","Y","N","N","N","Y","Y","Y","N","N","N","N","N","N","Y","N"],"responses":["B","Y","N","Y","Y","Y","N","N","N","Y","Y","Y","N","N","N","N","N","N","Y","B"],"accuracy":"95.00000"}}
+1494608562041,{"LABEL_STATE":"start break"}
+1494608562042,{"post request data":"{\"version\":1,\"time\":1494608562042,\"type\":\"BREAK_START\",\"id\":1001,\"label\":1001}"}
+1494608562084,{"post request response":"{message:null}\n"}
+1494608562125,{"post request response":"{message:null}\n"}
+1494608592042,{"LABEL_STATE":"end break"}
+1494608592043,{"post request data":"{\"version\":1,\"time\":1494608592043,\"type\":\"BREAK_END\",\"id\":1001,\"label\":1001}"}
+1494608592044,{"LABEL_STATE":"2-back (Trial 2/20)"}
+1494608592044,{"post request data":"{\"version\":1,\"time\":1494608592044,\"type\":\"TRAINING_START\",\"id\":1,\"label\":2}"}
+1494608592088,{"post request response":"{message:null}\n"}
+1494608592129,{"post request response":"{message:null}\n"}
+1494608652060,{"LABEL_STATE":"end trial"}
+1494608652060,{"post request data":"{\"version\":1,\"time\":1494608652060,\"type\":\"TRAINING_END\",\"id\":1,\"label\":2}"}
+1494608652062,{"LABEL_TRIAL":{"id":1,"n":2,"isLast":false,"left":0,"stimuli":[4,2,2,1,2,3,2,3,3,3,1,3,1,3,4,4,3,3,4,3],"answers":["B","B","N","N","Y","N","Y","Y","N","Y","N","Y","Y","Y","N","N","N","N","N","Y"],"responses":["N","N","N","N","Y","N","Y","Y","N","Y","N","Y","Y","Y","N","N","N","N","N","B"],"accuracy":"85.00000"}}
+1494608652062,{"LABEL_STATE":"start break"}
+1494608652062,{"post request data":"{\"version\":1,\"time\":1494608652062,\"type\":\"BREAK_START\",\"id\":1002,\"label\":1002}"}
+1494608652105,{"post request response":"{message:null}\n"}
+1494608652147,{"post request response":"{message:null}\n"}
+1494608682062,{"LABEL_STATE":"end break"}
+1494608682063,{"post request data":"{\"version\":1,\"time\":1494608682063,\"type\":\"BREAK_END\",\"id\":1002,\"label\":1002}"}
+1494608682063,{"LABEL_STATE":"1-back (Trial 3/20)"}
+1494608682063,{"post request data":"{\"version\":1,\"time\":1494608682063,\"type\":\"TRAINING_START\",\"id\":2,\"label\":1}"}
+1494608682106,{"post request response":"{message:null}\n"}
+1494608682147,{"post request response":"{message:null}\n"}
+1494608742078,{"LABEL_STATE":"end trial"}
+1494608742078,{"post request data":"{\"version\":1,\"time\":1494608742078,\"type\":\"TRAINING_END\",\"id\":2,\"label\":1}"}
+1494608742079,{"LABEL_TRIAL":{"id":2,"n":1,"isLast":false,"left":0,"stimuli":[4,1,1,4,3,4,4,4,1,2,3,1,1,3,1,3,2,2,4,3],"answers":["B","N","Y","N","N","N","Y","Y","N","N","N","N","Y","N","N","N","N","Y","N","N"],"responses":["B","N","Y","N","N","N","Y","Y","N","N","N","N","Y","N","N","N","N","Y","N","B"],"accuracy":"95.00000"}}
+1494608742079,{"LABEL_STATE":"start break"}
+1494608742079,{"post request data":"{\"version\":1,\"time\":1494608742079,\"type\":\"BREAK_START\",\"id\":1003,\"label\":1003}"}
+1494608742122,{"post request response":"{message:null}\n"}
+1494608742163,{"post request response":"{message:null}\n"}
+1494608772080,{"LABEL_STATE":"end break"}
+1494608772080,{"post request data":"{\"version\":1,\"time\":1494608772080,\"type\":\"BREAK_END\",\"id\":1003,\"label\":1003}"}
+1494608772087,{"LABEL_STATE":"2-back (Trial 4/20)"}
+1494608772087,{"post request data":"{\"version\":1,\"time\":1494608772087,\"type\":\"TRAINING_START\",\"id\":3,\"label\":2}"}
+1494608772130,{"post request response":"{message:null}\n"}
+1494608772171,{"post request response":"{message:null}\n"}
+1494608832103,{"LABEL_STATE":"end trial"}
+1494608832103,{"post request data":"{\"version\":1,\"time\":1494608832103,\"type\":\"TRAINING_END\",\"id\":3,\"label\":2}"}
+1494608832103,{"LABEL_TRIAL":{"id":3,"n":2,"isLast":false,"left":0,"stimuli":[2,1,4,1,4,3,3,3,2,3,2,2,3,4,1,4,1,4,2,4],"answers":["B","B","N","Y","Y","N","N","Y","N","Y","Y","N","N","N","N","Y","Y","Y","N","Y"],"responses":["B","B","N","N","Y","N","N","Y","N","Y","Y","N","N","N","N","Y","Y","Y","N","B"],"accuracy":"90.00000"}}
+1494608832104,{"LABEL_STATE":"start break"}
+1494608832104,{"post request data":"{\"version\":1,\"time\":1494608832104,\"type\":\"BREAK_START\",\"id\":1004,\"label\":1004}"}
+1494608832146,{"post request response":"{message:null}\n"}
+1494608832187,{"post request response":"{message:null}\n"}
+1494608862104,{"LABEL_STATE":"end break"}
+1494608862105,{"post request data":"{\"version\":1,\"time\":1494608862105,\"type\":\"BREAK_END\",\"id\":1004,\"label\":1004}"}
+1494608862105,{"LABEL_STATE":"1-back (Trial 5/20)"}
+1494608862106,{"post request data":"{\"version\":1,\"time\":1494608862106,\"type\":\"TRAINING_START\",\"id\":4,\"label\":1}"}
+1494608862149,{"post request response":"{message:null}\n"}
+1494608862190,{"post request response":"{message:null}\n"}
+1494608922120,{"LABEL_STATE":"end trial"}
+1494608922121,{"post request data":"{\"version\":1,\"time\":1494608922121,\"type\":\"TRAINING_END\",\"id\":4,\"label\":1}"}
+1494608922122,{"LABEL_TRIAL":{"id":4,"n":1,"isLast":false,"left":0,"stimuli":[3,3,1,4,3,2,2,2,1,3,3,3,3,4,4,4,3,3,4,1],"answers":["B","Y","N","N","N","N","Y","Y","N","N","Y","Y","Y","N","Y","Y","N","Y","N","N"],"responses":["B","Y","N","N","N","N","Y","Y","N","N","Y","Y","Y","N","Y","Y","N","Y","N","B"],"accuracy":"95.00000"}}
+1494608922122,{"LABEL_STATE":"start break"}
+1494608922122,{"post request data":"{\"version\":1,\"time\":1494608922122,\"type\":\"BREAK_START\",\"id\":1005,\"label\":1005}"}
+1494608922165,{"post request response":"{message:null}\n"}
+1494608922207,{"post request response":"{message:null}\n"}
+1494608952122,{"LABEL_STATE":"end break"}
+1494608952123,{"post request data":"{\"version\":1,\"time\":1494608952123,\"type\":\"BREAK_END\",\"id\":1005,\"label\":1005}"}
+1494608952124,{"LABEL_STATE":"1-back (Trial 6/20)"}
+1494608952124,{"post request data":"{\"version\":1,\"time\":1494608952124,\"type\":\"TRAINING_START\",\"id\":5,\"label\":1}"}
+1494608952166,{"post request response":"{message:null}\n"}
+1494608952207,{"post request response":"{message:null}\n"}
+1494609012139,{"LABEL_STATE":"end trial"}
+1494609012139,{"post request data":"{\"version\":1,\"time\":1494609012139,\"type\":\"TRAINING_END\",\"id\":5,\"label\":1}"}
+1494609012140,{"LABEL_TRIAL":{"id":5,"n":1,"isLast":false,"left":0,"stimuli":[2,2,2,3,4,2,2,2,1,3,3,1,4,4,3,2,1,1,2,2],"answers":["B","Y","Y","N","N","N","Y","Y","N","N","Y","N","N","Y","N","N","N","Y","N","Y"],"responses":["B","Y","Y","N","N","N","Y","Y","N","N","Y","N","N","Y","N","N","N","Y","N","B"],"accuracy":"95.00000"}}
+1494609012140,{"LABEL_STATE":"start break"}
+1494609012140,{"post request data":"{\"version\":1,\"time\":1494609012140,\"type\":\"BREAK_START\",\"id\":1006,\"label\":1006}"}
+1494609012183,{"post request response":"{message:null}\n"}
+1494609012224,{"post request response":"{message:null}\n"}
+1494609042141,{"LABEL_STATE":"end break"}
+1494609042141,{"post request data":"{\"version\":1,\"time\":1494609042141,\"type\":\"BREAK_END\",\"id\":1006,\"label\":1006}"}
+1494609042142,{"LABEL_STATE":"1-back (Trial 7/20)"}
+1494609042142,{"post request data":"{\"version\":1,\"time\":1494609042142,\"type\":\"TRAINING_START\",\"id\":6,\"label\":1}"}
+1494609042185,{"post request response":"{message:null}\n"}
+1494609042226,{"post request response":"{message:null}\n"}
+1494609102158,{"LABEL_STATE":"end trial"}
+1494609102159,{"post request data":"{\"version\":1,\"time\":1494609102159,\"type\":\"TRAINING_END\",\"id\":6,\"label\":1}"}
+1494609102160,{"LABEL_TRIAL":{"id":6,"n":1,"isLast":false,"left":0,"stimuli":[2,2,4,2,3,3,2,3,3,4,4,4,4,2,1,4,4,3,1,4],"answers":["B","Y","N","N","N","Y","N","N","Y","N","Y","Y","Y","N","N","N","Y","N","N","N"],"responses":["B","Y","N","N","N","Y","N","N","Y","N","Y","Y","Y","N","N","N","Y","N","N","B"],"accuracy":"95.00000"}}
+1494609102160,{"LABEL_STATE":"start break"}
+1494609102160,{"post request data":"{\"version\":1,\"time\":1494609102160,\"type\":\"BREAK_START\",\"id\":1007,\"label\":1007}"}
+1494609102203,{"post request response":"{message:null}\n"}
+1494609102244,{"post request response":"{message:null}\n"}
+1494609132161,{"LABEL_STATE":"end break"}
+1494609132161,{"post request data":"{\"version\":1,\"time\":1494609132161,\"type\":\"BREAK_END\",\"id\":1007,\"label\":1007}"}
+1494609132162,{"LABEL_STATE":"2-back (Trial 8/20)"}
+1494609132162,{"post request data":"{\"version\":1,\"time\":1494609132162,\"type\":\"TRAINING_START\",\"id\":7,\"label\":2}"}
+1494609132205,{"post request response":"{message:null}\n"}
+1494609132246,{"post request response":"{message:null}\n"}
+1494609192181,{"LABEL_STATE":"end trial"}
+1494609192182,{"post request data":"{\"version\":1,\"time\":1494609192182,\"type\":\"TRAINING_END\",\"id\":7,\"label\":2}"}
+1494609192183,{"LABEL_TRIAL":{"id":7,"n":2,"isLast":false,"left":0,"stimuli":[3,1,2,4,3,3,4,2,4,4,1,1,1,2,1,2,1,2,4,1],"answers":["B","B","N","N","N","N","N","N","Y","N","N","N","Y","N","Y","Y","Y","Y","N","N"],"responses":["B","B","N","N","N","N","N","N","Y","N","N","N","Y","N","Y","Y","Y","Y","N","B"],"accuracy":"95.00000"}}
+1494609192183,{"LABEL_STATE":"start break"}
+1494609192183,{"post request data":"{\"version\":1,\"time\":1494609192183,\"type\":\"BREAK_START\",\"id\":1008,\"label\":1008}"}
+1494609192227,{"post request response":"{message:null}\n"}
+1494609192268,{"post request response":"{message:null}\n"}
+1494609222184,{"LABEL_STATE":"end break"}
+1494609222184,{"post request data":"{\"version\":1,\"time\":1494609222184,\"type\":\"BREAK_END\",\"id\":1008,\"label\":1008}"}
+1494609222185,{"LABEL_STATE":"1-back (Trial 9/20)"}
+1494609222185,{"post request data":"{\"version\":1,\"time\":1494609222185,\"type\":\"TRAINING_START\",\"id\":8,\"label\":1}"}
+1494609222230,{"post request response":"{message:null}\n"}
+1494609222271,{"post request response":"{message:null}\n"}
+1494609282199,{"LABEL_STATE":"end trial"}
+1494609282200,{"post request data":"{\"version\":1,\"time\":1494609282200,\"type\":\"TRAINING_END\",\"id\":8,\"label\":1}"}
+1494609282201,{"LABEL_TRIAL":{"id":8,"n":1,"isLast":false,"left":0,"stimuli":[4,2,3,4,4,4,3,3,1,2,2,3,3,3,3,2,2,2,3,2],"answers":["B","N","N","N","Y","Y","N","Y","N","N","Y","N","Y","Y","Y","N","Y","Y","N","N"],"responses":["B","N","N","N","Y","Y","N","Y","N","N","Y","N","Y","Y","Y","N","Y","Y","N","B"],"accuracy":"95.00000"}}
+1494609282201,{"LABEL_STATE":"start break"}
+1494609282201,{"post request data":"{\"version\":1,\"time\":1494609282201,\"type\":\"BREAK_START\",\"id\":1009,\"label\":1009}"}
+1494609282245,{"post request response":"{message:null}\n"}
+1494609282286,{"post request response":"{message:null}\n"}
+1494609312202,{"LABEL_STATE":"end break"}
+1494609312202,{"post request data":"{\"version\":1,\"time\":1494609312202,\"type\":\"BREAK_END\",\"id\":1009,\"label\":1009}"}
+1494609312203,{"LABEL_STATE":"2-back (Trial 10/20)"}
+1494609312203,{"post request data":"{\"version\":1,\"time\":1494609312203,\"type\":\"TRAINING_START\",\"id\":9,\"label\":2}"}
+1494609312246,{"post request response":"{message:null}\n"}
+1494609312287,{"post request response":"{message:null}\n"}
+1494609372217,{"LABEL_STATE":"end trial"}
+1494609372218,{"post request data":"{\"version\":1,\"time\":1494609372218,\"type\":\"TRAINING_END\",\"id\":9,\"label\":2}"}
+1494609372218,{"LABEL_TRIAL":{"id":9,"n":2,"isLast":false,"left":0,"stimuli":[2,1,2,2,3,4,3,3,3,1,4,1,2,4,2,1,2,2,3,2],"answers":["B","B","Y","N","N","N","Y","N","Y","N","N","Y","N","N","Y","N","Y","N","N","Y"],"responses":["B","B","Y","N","N","N","Y","N","Y","N","N","Y","N","N","Y","N","Y","N","N","B"],"accuracy":"95.00000"}}
+1494609372218,{"LABEL_STATE":"start break"}
+1494609372218,{"post request data":"{\"version\":1,\"time\":1494609372218,\"type\":\"BREAK_START\",\"id\":1010,\"label\":1010}"}
+1494609372261,{"post request response":"{message:null}\n"}
+1494609372302,{"post request response":"{message:null}\n"}
+1494609402219,{"LABEL_STATE":"end break"}
+1494609402220,{"post request data":"{\"version\":1,\"time\":1494609402220,\"type\":\"BREAK_END\",\"id\":1010,\"label\":1010}"}
+1494609402221,{"LABEL_STATE":"2-back (Trial 11/20)"}
+1494609402221,{"post request data":"{\"version\":1,\"time\":1494609402221,\"type\":\"TRAINING_START\",\"id\":10,\"label\":2}"}
+1494609402265,{"post request response":"{message:null}\n"}
+1494609402306,{"post request response":"{message:null}\n"}
+1494609462235,{"LABEL_STATE":"end trial"}
+1494609462235,{"post request data":"{\"version\":1,\"time\":1494609462235,\"type\":\"TRAINING_END\",\"id\":10,\"label\":2}"}
+1494609462236,{"LABEL_TRIAL":{"id":10,"n":2,"isLast":false,"left":0,"stimuli":[3,1,3,4,3,3,4,1,1,1,4,1,3,1,2,1,4,2,3,2],"answers":["B","B","Y","N","Y","N","N","N","N","Y","N","Y","N","Y","N","Y","N","N","N","Y"],"responses":["B","B","Y","N","Y","N","N","N","N","Y","N","Y","N","Y","N","Y","N","N","N","B"],"accuracy":"95.00000"}}
+1494609462236,{"LABEL_STATE":"start break"}
+1494609462236,{"post request data":"{\"version\":1,\"time\":1494609462236,\"type\":\"BREAK_START\",\"id\":1011,\"label\":1011}"}
+1494609462280,{"post request response":"{message:null}\n"}
+1494609462321,{"post request response":"{message:null}\n"}
+1494609492239,{"LABEL_STATE":"end break"}
+1494609492240,{"post request data":"{\"version\":1,\"time\":1494609492240,\"type\":\"BREAK_END\",\"id\":1011,\"label\":1011}"}
+1494609492241,{"LABEL_STATE":"2-back (Trial 12/20)"}
+1494609492241,{"post request data":"{\"version\":1,\"time\":1494609492241,\"type\":\"TRAINING_START\",\"id\":11,\"label\":2}"}
+1494609492284,{"post request response":"{message:null}\n"}
+1494609492325,{"post request response":"{message:null}\n"}
+1494609552256,{"LABEL_STATE":"end trial"}
+1494609552256,{"post request data":"{\"version\":1,\"time\":1494609552256,\"type\":\"TRAINING_END\",\"id\":11,\"label\":2}"}
+1494609552257,{"LABEL_TRIAL":{"id":11,"n":2,"isLast":false,"left":0,"stimuli":[3,3,2,3,2,2,2,3,4,1,4,1,4,2,4,3,3,1,4,1],"answers":["B","B","N","Y","Y","N","Y","N","N","N","Y","Y","Y","N","Y","N","N","N","N","Y"],"responses":["B","B","N","Y","Y","N","Y","N","N","N","Y","Y","Y","N","Y","N","N","N","N","B"],"accuracy":"95.00000"}}
+1494609552257,{"LABEL_STATE":"start break"}
+1494609552257,{"post request data":"{\"version\":1,\"time\":1494609552257,\"type\":\"BREAK_START\",\"id\":1012,\"label\":1012}"}
+1494609552300,{"post request response":"{message:null}\n"}
+1494609552341,{"post request response":"{message:null}\n"}
+1494609582258,{"LABEL_STATE":"end break"}
+1494609582258,{"post request data":"{\"version\":1,\"time\":1494609582258,\"type\":\"BREAK_END\",\"id\":1012,\"label\":1012}"}
+1494609582259,{"LABEL_STATE":"1-back (Trial 13/20)"}
+1494609582259,{"post request data":"{\"version\":1,\"time\":1494609582259,\"type\":\"TRAINING_START\",\"id\":12,\"label\":1}"}
+1494609582302,{"post request response":"{message:null}\n"}
+1494609582343,{"post request response":"{message:null}\n"}
+1494609642273,{"LABEL_STATE":"end trial"}
+1494609642273,{"post request data":"{\"version\":1,\"time\":1494609642273,\"type\":\"TRAINING_END\",\"id\":12,\"label\":1}"}
+1494609642274,{"LABEL_TRIAL":{"id":12,"n":1,"isLast":false,"left":0,"stimuli":[2,2,2,3,2,4,4,2,2,2,3,3,4,2,4,1,2,2,1,4],"answers":["B","Y","Y","N","N","N","Y","N","Y","Y","N","Y","N","N","N","N","N","Y","N","N"],"responses":["B","Y","Y","N","N","N","Y","N","Y","Y","N","N","N","N","N","N","N","Y","N","B"],"accuracy":"90.00000"}}
+1494609642274,{"LABEL_STATE":"start break"}
+1494609642274,{"post request data":"{\"version\":1,\"time\":1494609642274,\"type\":\"BREAK_START\",\"id\":1013,\"label\":1013}"}
+1494609642316,{"post request response":"{message:null}\n"}
+1494609642357,{"post request response":"{message:null}\n"}
+1494609672274,{"LABEL_STATE":"end break"}
+1494609672275,{"post request data":"{\"version\":1,\"time\":1494609672275,\"type\":\"BREAK_END\",\"id\":1013,\"label\":1013}"}
+1494609672276,{"LABEL_STATE":"2-back (Trial 14/20)"}
+1494609672276,{"post request data":"{\"version\":1,\"time\":1494609672276,\"type\":\"TRAINING_START\",\"id\":13,\"label\":2}"}
+1494609672320,{"post request response":"{message:null}\n"}
+1494609672361,{"post request response":"{message:null}\n"}
+1494609732291,{"LABEL_STATE":"end trial"}
+1494609732291,{"post request data":"{\"version\":1,\"time\":1494609732291,\"type\":\"TRAINING_END\",\"id\":13,\"label\":2}"}
+1494609732292,{"LABEL_TRIAL":{"id":13,"n":2,"isLast":false,"left":0,"stimuli":[3,4,1,4,3,2,1,1,2,2,3,2,4,3,1,2,1,4,4,3],"answers":["B","B","N","Y","N","N","N","N","N","N","N","Y","N","N","N","N","Y","N","N","N"],"responses":["B","B","N","Y","N","N","N","N","N","N","N","Y","N","N","N","N","Y","N","N","B"],"accuracy":"95.00000"}}
+1494609732292,{"LABEL_STATE":"start break"}
+1494609732292,{"post request data":"{\"version\":1,\"time\":1494609732292,\"type\":\"BREAK_START\",\"id\":1014,\"label\":1014}"}
+1494609732335,{"post request response":"{message:null}\n"}
+1494609732376,{"post request response":"{message:null}\n"}
+1494609762293,{"LABEL_STATE":"end break"}
+1494609762293,{"post request data":"{\"version\":1,\"time\":1494609762293,\"type\":\"BREAK_END\",\"id\":1014,\"label\":1014}"}
+1494609762294,{"LABEL_STATE":"2-back (Trial 15/20)"}
+1494609762294,{"post request data":"{\"version\":1,\"time\":1494609762294,\"type\":\"TRAINING_START\",\"id\":14,\"label\":2}"}
+1494609762338,{"post request response":"{message:null}\n"}
+1494609762379,{"post request response":"{message:null}\n"}
+1494609822309,{"LABEL_STATE":"end trial"}
+1494609822309,{"post request data":"{\"version\":1,\"time\":1494609822309,\"type\":\"TRAINING_END\",\"id\":14,\"label\":2}"}
+1494609822310,{"LABEL_TRIAL":{"id":14,"n":2,"isLast":false,"left":0,"stimuli":[2,4,1,1,3,1,4,3,4,2,4,1,2,3,2,4,2,2,3,3],"answers":["B","B","N","N","N","Y","N","N","Y","N","Y","N","N","N","Y","N","Y","N","N","N"],"responses":["B","B","N","N","N","Y","N","N","Y","N","Y","N","N","N","Y","N","Y","N","N","B"],"accuracy":"95.00000"}}
+1494609822310,{"LABEL_STATE":"start break"}
+1494609822310,{"post request data":"{\"version\":1,\"time\":1494609822310,\"type\":\"BREAK_START\",\"id\":1015,\"label\":1015}"}
+1494609822354,{"post request response":"{message:null}\n"}
+1494609822395,{"post request response":"{message:null}\n"}
+1494609852311,{"LABEL_STATE":"end break"}
+1494609852312,{"post request data":"{\"version\":1,\"time\":1494609852312,\"type\":\"BREAK_END\",\"id\":1015,\"label\":1015}"}
+1494609852313,{"LABEL_STATE":"2-back (Trial 16/20)"}
+1494609852313,{"post request data":"{\"version\":1,\"time\":1494609852313,\"type\":\"TRAINING_START\",\"id\":15,\"label\":2}"}
+1494609852355,{"post request response":"{message:null}\n"}
+1494609852397,{"post request response":"{message:null}\n"}
+1494609912329,{"LABEL_STATE":"end trial"}
+1494609912329,{"post request data":"{\"version\":1,\"time\":1494609912329,\"type\":\"TRAINING_END\",\"id\":15,\"label\":2}"}
+1494609912330,{"LABEL_TRIAL":{"id":15,"n":2,"isLast":false,"left":0,"stimuli":[3,1,3,1,4,1,1,2,1,1,1,1,4,2,1,2,1,2,1,4],"answers":["B","B","Y","Y","N","Y","N","N","Y","N","Y","Y","N","N","N","Y","Y","Y","Y","N"],"responses":["B","B","Y","Y","N","Y","N","N","Y","N","Y","Y","N","N","N","Y","Y","Y","Y","B"],"accuracy":"95.00000"}}
+1494609912330,{"LABEL_STATE":"start break"}
+1494609912330,{"post request data":"{\"version\":1,\"time\":1494609912330,\"type\":\"BREAK_START\",\"id\":1016,\"label\":1016}"}
+1494609912374,{"post request response":"{message:null}\n"}
+1494609912415,{"post request response":"{message:null}\n"}
+1494609942331,{"LABEL_STATE":"end break"}
+1494609942331,{"post request data":"{\"version\":1,\"time\":1494609942331,\"type\":\"BREAK_END\",\"id\":1016,\"label\":1016}"}
+1494609942332,{"LABEL_STATE":"2-back (Trial 17/20)"}
+1494609942332,{"post request data":"{\"version\":1,\"time\":1494609942332,\"type\":\"TRAINING_START\",\"id\":16,\"label\":2}"}
+1494609942376,{"post request response":"{message:null}\n"}
+1494609942417,{"post request response":"{message:null}\n"}
+1494610002346,{"LABEL_STATE":"end trial"}
+1494610002347,{"post request data":"{\"version\":1,\"time\":1494610002347,\"type\":\"TRAINING_END\",\"id\":16,\"label\":2}"}
+1494610002348,{"LABEL_TRIAL":{"id":16,"n":2,"isLast":false,"left":0,"stimuli":[2,4,2,1,2,4,2,4,3,2,2,2,1,4,1,2,3,4,1,2],"answers":["B","B","Y","N","Y","N","Y","Y","N","N","N","Y","N","N","Y","N","N","N","N","N"],"responses":["B","B","Y","N","Y","N","Y","Y","N","N","N","Y","N","N","Y","N","N","N","N","B"],"accuracy":"95.00000"}}
+1494610002348,{"LABEL_STATE":"start break"}
+1494610002348,{"post request data":"{\"version\":1,\"time\":1494610002348,\"type\":\"BREAK_START\",\"id\":1017,\"label\":1017}"}
+1494610002391,{"post request response":"{message:null}\n"}
+1494610002432,{"post request response":"{message:null}\n"}
+1494610032349,{"LABEL_STATE":"end break"}
+1494610032349,{"post request data":"{\"version\":1,\"time\":1494610032349,\"type\":\"BREAK_END\",\"id\":1017,\"label\":1017}"}
+1494610032350,{"LABEL_STATE":"1-back (Trial 18/20)"}
+1494610032352,{"post request data":"{\"version\":1,\"time\":1494610032352,\"type\":\"TRAINING_START\",\"id\":17,\"label\":1}"}
+1494610032393,{"post request response":"{message:null}\n"}
+1494610032434,{"post request response":"{message:null}\n"}
+1494610092367,{"LABEL_STATE":"end trial"}
+1494610092368,{"post request data":"{\"version\":1,\"time\":1494610092368,\"type\":\"TRAINING_END\",\"id\":17,\"label\":1}"}
+1494610092368,{"LABEL_TRIAL":{"id":17,"n":1,"isLast":false,"left":0,"stimuli":[4,3,3,4,4,4,4,4,4,3,1,1,3,4,1,1,4,4,3,1],"answers":["B","N","Y","N","Y","Y","Y","Y","Y","N","N","Y","N","N","N","Y","N","Y","N","N"],"responses":["B","N","Y","N","Y","Y","Y","Y","Y","N","N","Y","N","N","N","Y","N","Y","N","B"],"accuracy":"95.00000"}}
+1494610092368,{"LABEL_STATE":"start break"}
+1494610092368,{"post request data":"{\"version\":1,\"time\":1494610092368,\"type\":\"BREAK_START\",\"id\":1018,\"label\":1018}"}
+1494610092411,{"post request response":"{message:null}\n"}
+1494610092452,{"post request response":"{message:null}\n"}
+1494610122369,{"LABEL_STATE":"end break"}
+1494610122369,{"post request data":"{\"version\":1,\"time\":1494610122369,\"type\":\"BREAK_END\",\"id\":1018,\"label\":1018}"}
+1494610122370,{"LABEL_STATE":"1-back (Trial 19/20)"}
+1494610122370,{"post request data":"{\"version\":1,\"time\":1494610122370,\"type\":\"TRAINING_START\",\"id\":18,\"label\":1}"}
+1494610122414,{"post request response":"{message:null}\n"}
+1494610122455,{"post request response":"{message:null}\n"}
+1494610182385,{"LABEL_STATE":"end trial"}
+1494610182386,{"post request data":"{\"version\":1,\"time\":1494610182386,\"type\":\"TRAINING_END\",\"id\":18,\"label\":1}"}
+1494610182387,{"LABEL_TRIAL":{"id":18,"n":1,"isLast":false,"left":0,"stimuli":[3,3,3,4,4,4,1,2,3,4,1,1,2,3,4,4,2,3,1,4],"answers":["B","Y","Y","N","Y","Y","N","N","N","N","N","Y","N","N","N","Y","N","N","N","N"],"responses":["B","Y","Y","N","Y","Y","N","N","N","N","N","Y","N","N","N","Y","N","N","N","B"],"accuracy":"95.00000"}}
+1494610182387,{"LABEL_STATE":"start break"}
+1494610182387,{"post request data":"{\"version\":1,\"time\":1494610182387,\"type\":\"BREAK_START\",\"id\":1019,\"label\":1019}"}
+1494610182430,{"post request response":"{message:null}\n"}
+1494610182471,{"post request response":"{message:null}\n"}
+1494610212387,{"LABEL_STATE":"end break"}
+1494610212388,{"post request data":"{\"version\":1,\"time\":1494610212388,\"type\":\"BREAK_END\",\"id\":1019,\"label\":1019}"}
+1494610212389,{"LABEL_STATE":"1-back (Trial 20/20)"}
+1494610212389,{"post request data":"{\"version\":1,\"time\":1494610212389,\"type\":\"TRAINING_START\",\"id\":19,\"label\":1}"}
+1494610212435,{"post request response":"{message:null}\n"}
+1494610212476,{"post request response":"{message:null}\n"}
+1494610272406,{"LABEL_STATE":"end trial"}
+1494610272406,{"post request data":"{\"version\":1,\"time\":1494610272406,\"type\":\"TRAINING_END\",\"id\":19,\"label\":1}"}
+1494610272407,{"LABEL_TRIAL":{"id":19,"n":1,"isLast":true,"left":0,"stimuli":[2,4,4,4,4,4,2,3,3,3,4,1,4,4,2,4,4,4,2,1],"answers":["B","N","Y","Y","Y","Y","N","N","Y","Y","N","N","N","Y","N","N","Y","Y","N","N"],"responses":["B","N","Y","Y","Y","Y","N","N","Y","Y","N","N","N","Y","N","N","Y","Y","N","B"],"accuracy":"95.00000"}}
+1494610272407,{"LABEL_STATE":"end task"}
+1494610272407,{"post request data":"{\"version\":1,\"time\":1494610272407,\"type\":\"TASK_END\",\"id\":10000,\"label\":10000}"}
+1494610272408,{"LABEL_STATE":"close connection"}
+1494610272408,{"post request data":"{\"version\":1,\"time\":1494610272408,\"type\":\"CONNECTION_CLOSE\",\"id\":30000,\"label\":30000}"}
+1494610272409,{"LABEL_STATE":"save log"}
